@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Oscar Moyeda</title>
+    <link href="./static/style.css" rel="stylesheet" />
+    <link href="./static/images/om-logo.png" rel="icon" />
+  </head>
+  <header>
+    <nav class="navbar">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="./index.html">🏡 Home</a></li>
+          <li><a href="./aboutme.html">👨‍💻 About me</a></li>
+          <li><a href="./projects.html">🧩 Projects</a></li>
+          <li><a href="./contact.html">📧 Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="home-content">
+      <div class="content">
+        <h1>Oscar Moyeda</h1>
+        <h2><span class="auto-type"></span></h2>
+        <p id="catch-phrase">
+          Great performance is what makes the simplest the greatest.
+        </p>
+        <p>
+          Welcome to my Portfolio Website! Completely made by me.<br />
+          Desktop Apps and Scripting is my thing. :)
+        </p>
+        <div id="buttons">
+          <button
+            class="btn-contact"
+            onclick="window.location.href = './contact.html';"
+          >
+            Contact Me!
+          </button>
+          <button
+            class="btn-resume"
+            type="submit"
+            onclick="window.open('./static/OscarMoyedaResume.pdf')"
+          >
+            My Resume
+          </button>
+        </div>
+      </div>
+      <img src="./static/images/om-logo.png" class="programmer-logo" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Computer Science student^1000",
+          "Data Science developer^1000",
+          "Full-Stack programmer^1000",
+          "Junior Software Engineer^1000",
+        ],
+        typeSpeed: 90,
+        backSpeed: 30,
+        loop: true,
+      });
+    </script>
+    <footer>
+      <div id="footer">
+        <p>Copyright © 2023 Oscar Moyeda</p>
+      </div>
+    </footer>
+  </body>
+</html>
